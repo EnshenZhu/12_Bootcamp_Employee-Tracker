@@ -1,23 +1,3 @@
-//Importing the required modules.
-const mysql = require('mysql2');
-const {options} = require('./utils/helperFunctions');
+const promptUser = require('./lib/promptUser');
 
-// Used to connect to the database.
-const db = mysql.createConnection(
-    {
-      host: 'localhost',
-      user: 'root',
-      password: 'zzc19962011',
-      database: 'company'
-    },
-    console.log('Connected to the company database.')
-  );
-
-//Function used for welcome message and start the actual application.
-const main = () => {
-    console.log("Welcome to the Employee Tracker App.");
-    options(db);
-}
-
-//Function code to start app.
-main();
+promptUser();

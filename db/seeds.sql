@@ -1,23 +1,27 @@
-INSERT INTO department (name) VALUES ("Human Resource"),
-("Financial"),
-("Administrative"),
-("Marketing"),
-("Sales"),
-("Purchase");
+INSERT INTO department (name)
+VALUES
+    ('Operations'),
+    ('HR'),
+    ('Sales');
 
-INSERT INTO role (title, salary, department_id) VALUES ("Representative", 45746, 1),
-("Analyst", 50316, 4),
-("Coordinator", 52014, 3),
-("Agent", 48347, 2),
-("Specialist", 46000, 6),
-("Consultant", 39174, 5);
+INSERT INTO role (title, salary, department_id)
+VALUES
+    ('Operations Manager','80000.00',1),
+    ('HR Manager','82000.50',2),
+    ('Sales Manager','84000.25',3),
+    ('Operations Employee', '50030.50',1),
+    ('HR Rep', '61000.30',2),
+    ('Sales Rep','62050.70',3);
 
-INSERT INTO employee (first_name, last_name, role_id, manager_id) VALUES
-("Maximilianus", "Danielsen", 1, null),
-("Yavuz", "Lundgren", 4, null),
-("Alwin", "Hilton", 4, 3),
-("Rajendra", "Falco", 6, null),
-("Romeo", "Tanaka", 2, null),
-("Cecílio", "Giménez", 3, null),
-("Abenner", "Biermann", 5, null),
-("Milorad", "Quincey", 2, 5);
+INSERT INTO employee (first_name, last_name, role_id, manager_id)
+VALUES
+    ('Ronald', 'Firbank', 1, NULL),
+    ('Virginia', 'Woolf', 2, NULL),
+    ('Piers', 'Gaveston', 3, NULL),
+    ('Charles', 'LeRoi', 4, 1),
+    ('Katherine', 'Mansfield', 4, 1),
+    ('Dora', 'Carrington', 4, 1),
+    ('Edward', 'Bellamy', 5, 2),
+    ('Montague', 'Summers', 5, 2),
+    ('Octavia', 'Butler', 6, 3),
+    ('Unica', 'Zurn', 6, 3);
