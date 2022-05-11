@@ -251,7 +251,7 @@ const updateEmployee = async (branch, db) => {
 const del = async (branch, db) => {
     let input = [];
     let query = ""
-    switch (branch ) {
+    switch (branch) {
         case "department":
             input.push(await listPrompt(promptQuestions.departmentName, db, 'Select * From department;'));
             query ='Delete From department Where id = ?;';
