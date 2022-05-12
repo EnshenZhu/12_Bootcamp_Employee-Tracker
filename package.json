@@ -1,0 +1,22 @@
+{
+  "name": "12_bootcamp_employee-tracker",
+  "version": "1.0.0",
+  "description": "This app stores employee information using mysql, and allows for reading, adding, deleting and editing of departments, roles and employees.",
+  "main": "app.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EnshenZhu/12_Bootcamp_Employee-Tracker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EnshenZhu/12_Bootcamp_Employee-Tracker/issues"
+  },
+  "homepage": "https://github.com/EnshenZhu/12_Bootcamp_Employee-Tracker#readme"
+}
